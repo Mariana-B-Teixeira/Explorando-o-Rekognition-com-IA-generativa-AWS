@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cadastro de Alunos</h1>
+
+    <!-- FORMULÁRIO -->
+    <div id="formulario">
+      <input type="text" id="nome" placeholder="Nome do aluno">
+      <input type="email" id="email" placeholder="E-mail do aluno">
+      <input type="text" id="curso" placeholder="Curso">
+      <input type="text" id="telefone" placeholder="Telefone">
+      <input type="date" id="data_nascimento" placeholder="Data de nascimento">
+
+      <!-- usa seu JS (não onclick direto para evitar conflitos) -->
+      <button id="btnSalvar">Salvar</button>
+    </div>
+
+    <!-- TABELA -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Curso</th>
+          <th>Telefone</th>
+          <th>Data de Nascimento</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <!-- compatível com seu script.js -->
+      <tbody id="listaAlunos"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
